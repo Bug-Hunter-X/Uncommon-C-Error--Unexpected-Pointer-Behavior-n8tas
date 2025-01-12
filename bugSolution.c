@@ -1,0 +1,1 @@
+int main() {    int x = 10;    int *ptr = &x;    *ptr = 20;    printf("%d\n", x); // Added newline for better output    // Check for potential null pointer before dereferencing (a more robust approach)     int *anotherPtr = NULL;      if (anotherPtr != NULL) {          *anotherPtr = 30;      } else {          printf("Pointer is NULL!\n");      }    return 0;} 
